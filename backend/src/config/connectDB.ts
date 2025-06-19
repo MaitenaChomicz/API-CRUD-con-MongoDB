@@ -3,7 +3,7 @@ process.loadEnvFile()
 
 const URI_DB = process.env.URI_DB || "mongodb://localhost:27017/api-auth"
 
-const connectDb = async () => {
+const connectDB = async () => {
   try {
     await connect(URI_DB)
     console.log(`Servidor de Mongo DB conectado correctamente}`)
@@ -12,4 +12,4 @@ const connectDb = async () => {
   }
 }
 
-export { connectDb }
+export { connectDB }
